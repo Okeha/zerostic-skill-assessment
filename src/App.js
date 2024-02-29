@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { database } from "./config/firebase";
-import { ref, get, onValue } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 import {
-  Card,
   MenuItem,
   Table,
   TableBody,
