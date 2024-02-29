@@ -12,7 +12,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { sortAscending, sortDescending } from "./helper/helper";
+import { sortAscending } from "./helper/helper";
 
 function App() {
   const [employees, setEmployees] = useState([]);
@@ -42,6 +42,7 @@ function App() {
   const displayNumber = async (e) => {
     const val = e.target.value;
     console.log(val);
+    console.log(pagination);
     setPagination(val);
 
     let employeeData = allEmployees;

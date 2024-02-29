@@ -8,6 +8,7 @@ const sortAscending = (arr) => {
     let { name } = element[`${Object.keys(element)[0]}`];
     let employee = `${Object.keys(element)[0]}`;
     toSortArr.push({ name, employee, originalIndex: index });
+    return 0;
   });
 
   // sort array here
@@ -30,6 +31,7 @@ const sortAscending = (arr) => {
   toSortArr.map((element) => {
     let { originalIndex } = element;
     sortedArr.push(arr[originalIndex]);
+    return 0;
   });
   return sortedArr;
 };
